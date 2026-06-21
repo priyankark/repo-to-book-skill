@@ -41,6 +41,11 @@ Then invoke the skill:
 /repo-to-book https://github.com/openai/codex.git
 ```
 
+**Prerequisites:** the plugin itself installs instantly, but building a book needs **Node/npm**
+and **Chrome/Chromium** on your machine. Node deps (`marked`, `mermaid`) install automatically
+on your first book build — no manual `npm install`. See [Requirements](#requirements) for
+details.
+
 ## How to use it
 
 …or just ask in natural language: *"make an architecture book about this repo."* The skill
