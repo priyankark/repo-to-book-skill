@@ -1,0 +1,9 @@
+# Engine deps — installed automatically on first run of make-book.sh
+node_modules/
+
+# Generated book output
+build/
+
+# OS / editor cruft
+.DS_Store
+*.swp

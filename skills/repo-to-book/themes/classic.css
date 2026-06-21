@@ -1,0 +1,10 @@
+/* classic — warm serif book, purple accent (the default "technical book" look) */
+:root {
+  --font-body: var(--font-serif);
+  --font-head: var(--font-sans);
+  --ink:#1a1a1a; --head:#15121f; --muted:#555; --strong:#000;
+  --accent:#5b3fa8; --bg:#ffffff; --line:#e2e2e8;
+  --code-bg:#f6f6f9; --code-ink:#3a2f5a;
+  --th-bg:#f0ecf8; --th-ink:#2a2150; --td-alt:#fafafd;
+  --quote-bg:#faf8fe; --graphic-bg:#fbfaff;
+}

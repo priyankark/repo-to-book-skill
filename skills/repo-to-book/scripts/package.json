@@ -1,0 +1,11 @@
+{
+  "name": "repo-to-book-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build engine for the repo-to-book skill: Markdown chapters -> self-contained HTML -> PDF + EPUB, with Mermaid and inline HTML/SVG graphics.",
+  "type": "commonjs",
+  "dependencies": {
+    "marked": "^16.0.0",
+    "mermaid": "^11.0.0"
+  }
+}

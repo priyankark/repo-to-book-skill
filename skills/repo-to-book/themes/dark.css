@@ -1,0 +1,10 @@
+/* dark — slate background, amber accent. Great for screen HTML/EPUB. */
+:root {
+  --font-body: var(--font-sans);
+  --font-head: var(--font-sans);
+  --ink:#e6e6ea; --head:#ffffff; --muted:#9aa0ad; --strong:#ffffff;
+  --accent:#f0a83a; --bg:#13151a; --line:#2b2f3a;
+  --code-bg:#1c1f27; --code-ink:#ffd591;
+  --th-bg:#20242e; --th-ink:#f0a83a; --td-alt:#181b22;
+  --quote-bg:#1a1d25; --graphic-bg:#181b22;
+}

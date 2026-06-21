@@ -1,0 +1,64 @@
+/* base.css — shared structural styles for all themes. Themes override the CSS variables. */
+:root {
+  --font-serif: "Charter","Georgia","Times New Roman",serif;
+  --font-sans: "Helvetica Neue","Arial",sans-serif;
+  --font-mono: "SF Mono","Menlo","Consolas",monospace;
+}
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.62;
+  font-size: 11.5pt;
+  margin: 0;
+}
+.chapter { padding: 0 4mm; page-break-before: always; }
+.chapter:first-of-type { page-break-before: avoid; }
+
+h1,h2,h3,h4 { font-family: var(--font-head); line-height: 1.25; color: var(--head); }
+h1 { font-size: 25pt; margin: 0 0 .45em; padding-bottom: .25em; border-bottom: 3px solid var(--accent); }
+h2 { font-size: 16pt; margin: 1.5em 0 .5em; color: var(--accent); }
+h3 { font-size: 12.5pt; margin: 1.2em 0 .4em; }
+h4 { font-size: 11pt; margin: 1em 0 .3em; color: var(--muted); }
+p { margin: .55em 0; }
+a { color: var(--accent); text-decoration: none; }
+strong { color: var(--strong); }
+
+code { font-family: var(--font-mono); font-size: 9.2pt; background: var(--code-bg);
+  padding: 1px 4px; border-radius: 3px; color: var(--code-ink); }
+pre { background: var(--code-bg); border: 1px solid var(--line); border-radius: 6px;
+  padding: 10px 12px; overflow-x: auto; page-break-inside: avoid; }
+pre code { background: none; padding: 0; font-size: 8.8pt; line-height: 1.45; }
+
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 9.6pt;
+  page-break-inside: avoid; font-family: var(--font-sans); }
+th,td { border: 1px solid var(--line); padding: 5px 9px; text-align: left; vertical-align: top; }
+th { background: var(--th-bg); color: var(--th-ink); font-weight: 600; }
+tr:nth-child(even) td { background: var(--td-alt); }
+
+blockquote { border-left: 3px solid var(--accent); margin: 1em 0; padding: .3em 1em;
+  color: var(--muted); background: var(--quote-bg); }
+hr { border: none; border-top: 1px solid var(--line); margin: 2em 0; }
+ul,ol { padding-left: 1.4em; }
+li { margin: .25em 0; }
+
+/* Mermaid + custom HTML/SVG graphics */
+.mermaid { text-align: center; margin: 1.2em 0; page-break-inside: avoid; }
+.mermaid svg { max-width: 100%; height: auto; }
+figure.graphic { margin: 1.3em 0; padding: 14px; page-break-inside: avoid;
+  background: var(--graphic-bg); border: 1px solid var(--line); border-radius: 8px; text-align: center; }
+figure.graphic svg { max-width: 100%; height: auto; }
+figure.graphic figcaption { font-family: var(--font-sans); font-size: 9pt; color: var(--muted); margin-top: 8px; }
+
+/* Cover */
+.cover { page-break-after: always; display: flex; min-height: 240mm; align-items: center; justify-content: center; }
+.cover-inner { text-align: center; padding: 0 10mm; }
+.cover-title { font-family: var(--font-head); font-size: 36pt; font-weight: 800; line-height: 1.08;
+  border: none; color: var(--head); margin: 0; }
+.cover-subtitle { font-family: var(--font-head); font-size: 17pt; color: var(--muted); margin-top: .6em; font-weight: 600; }
+.cover-rule { width: 60mm; height: 3px; background: var(--accent); margin: 9mm auto; }
+.cover-note { font-style: italic; font-size: 13pt; color: var(--muted); }
+.cover-meta { margin-top: 14mm; font-size: 10pt; color: var(--muted); font-family: var(--font-sans); line-height: 1.7; }
+.cover-author { margin-top: 8mm; font-size: 10.5pt; color: var(--muted); font-family: var(--font-sans); }

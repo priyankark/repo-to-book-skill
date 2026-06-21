@@ -1,0 +1,12 @@
+/* modern — clean sans-serif, teal accent, technical/manual feel */
+:root {
+  --font-body: var(--font-sans);
+  --font-head: var(--font-sans);
+  --ink:#1f2933; --head:#0b3d4d; --muted:#586069; --strong:#0b3d4d;
+  --accent:#0e7490; --bg:#ffffff; --line:#dce3e8;
+  --code-bg:#f3f6f8; --code-ink:#0b3d4d;
+  --th-bg:#e6f3f6; --th-ink:#0b3d4d; --td-alt:#f7fafb;
+  --quote-bg:#f2fafc; --graphic-bg:#f7fbfc;
+}
+body { line-height: 1.6; }
+h1 { border-bottom-width: 2px; }

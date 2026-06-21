@@ -1,0 +1,11 @@
+/* minimal — black & white, restrained, print-first */
+:root {
+  --font-body: var(--font-serif);
+  --font-head: var(--font-serif);
+  --ink:#111; --head:#000; --muted:#444; --strong:#000;
+  --accent:#000000; --bg:#ffffff; --line:#cccccc;
+  --code-bg:#f4f4f4; --code-ink:#111;
+  --th-bg:#eeeeee; --th-ink:#000; --td-alt:#f8f8f8;
+  --quote-bg:#f7f7f7; --graphic-bg:#fcfcfc;
+}
+h2 { color:#000; } h1 { border-bottom-color:#000; }
