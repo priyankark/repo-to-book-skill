@@ -25,18 +25,30 @@ repo-to-book/
     └── inside-codex.pdf   ← example output (built from openai/codex)
 ```
 
-## How to use it
+## Install as a Claude Code plugin
 
-This is a Claude Code skill. Install it by copying `skills/repo-to-book/` into your skills
-directory (`~/.claude/skills/repo-to-book/`), then invoke it from a Claude Code session:
+This repo is a Claude Code plugin marketplace. Add it and install the plugin from a Claude
+Code session:
+
+```
+/plugin marketplace add priyankark/repo-to-book-skill
+/plugin install repo-to-book@priyankark-plugins
+```
+
+Then invoke the skill:
 
 ```
 /repo-to-book https://github.com/openai/codex.git
 ```
 
+## How to use it
+
 …or just ask in natural language: *"make an architecture book about this repo."* The skill
 asks a few questions (audience & depth, how much background, visual theme, and which
 formats), explores the codebase, writes the chapters, and builds the output.
+
+You can also install it manually by copying `skills/repo-to-book/` into your skills directory
+(`~/.claude/skills/repo-to-book/`).
 
 ## The build engine
 

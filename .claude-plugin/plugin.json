@@ -1,0 +1,15 @@
+{
+  "name": "repo-to-book",
+  "displayName": "Repo to Book",
+  "description": "Turn any code repository into a beautiful, diagram-rich technical book (PDF, EPUB, and self-contained HTML).",
+  "version": "1.0.0",
+  "author": {
+    "name": "Priyankar Kumar",
+    "email": "priyankar.kumar98@gmail.com",
+    "url": "https://github.com/priyankark"
+  },
+  "homepage": "https://github.com/priyankark/repo-to-book-skill",
+  "repository": "https://github.com/priyankark/repo-to-book-skill",
+  "license": "MIT",
+  "keywords": ["documentation", "book", "architecture", "diagrams", "pdf", "epub"]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "priyankark-plugins",
+  "metadata": {
+    "description": "Plugins by Priyankar Kumar, including repo-to-book — turn any codebase into a diagram-rich technical book."
+  },
+  "owner": {
+    "name": "Priyankar Kumar",
+    "email": "priyankar.kumar98@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "repo-to-book",
+      "source": "./",
+      "description": "Turn any code repository into a beautiful, diagram-rich technical book (PDF, EPUB, and self-contained HTML).",
+      "version": "1.0.0"
+    }
+  ]
+}
